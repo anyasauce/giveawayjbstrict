@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(strict.jpg);
+    background-position: center; 
+}
+
+.entry-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    height: 250px;
+    position: relative; /* Added for positioning */
+}
+
+h2 {
+    color: #333333;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    text-transform: uppercase; /* Change "Submit" to uppercase */
+    padding: 15px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.result-message, .error-message {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    font-size: 16px;
+    width: 100%; /* Span the full width */
+}
+
+.result-message {
+    bottom: 5px;
+    color: green; 
+}
+
+.error-message {
+    top: 0;
+    color: red;
+}
